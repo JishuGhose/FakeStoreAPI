@@ -1,4 +1,4 @@
-package com.example.fakestoreapi.services;
+package com.example.fakestoreapi.thirdpartyclient;
 
 import com.example.fakestoreapi.dtos.GenericProductDto;
 import com.example.fakestoreapi.exceptions.NotFoundException;
@@ -6,9 +6,9 @@ import com.example.fakestoreapi.thirdpartyclient.fakestoreclient.FakeStoreAddPro
 
 import java.util.List;
 
-public interface ProductService
+public interface ThirdPartyAdaptorInterface
 {
-    GenericProductDto getProductById( Long id ) throws NotFoundException;
+    GenericProductDto getProductById(Long id ) throws NotFoundException;
     List<GenericProductDto> getAllProducts();
 
     GenericProductDto createProduct(FakeStoreAddProductDto fakeStoreAddProductDto);
@@ -16,7 +16,4 @@ public interface ProductService
     GenericProductDto updateProduct(FakeStoreAddProductDto fakeStoreAddProductDto, long id);
 
     GenericProductDto deleteProductById(long id);
-
-
-
 }

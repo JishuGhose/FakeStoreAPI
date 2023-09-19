@@ -1,12 +1,11 @@
-package com.example.fakestoreapi.dtos;
+package com.example.fakestoreapi.thirdpartyclient.fakestoreclient;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class FakeStoreGetProductByIdDto
-{
+public class FakeStoreGetProductByIdDto {
     /*
      *          id:1,
                 title:'...',
